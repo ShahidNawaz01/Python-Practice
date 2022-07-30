@@ -17,7 +17,7 @@ if choice_type == 1:
         while True:
             input_diet = input('Enter your input: ')
             with open(f'{person}-diet.txt', 'a') as file:
-                file.write(str(getdate()) + ' ' + input_diet + '\n')
+                file.write(f'{str(getdate())} {input_diet} \n')
             reentry = input('Do you want to make another entry? (Y/N)')
             if reentry.lower() == 'n':
                 break
@@ -25,7 +25,7 @@ if choice_type == 1:
         while True:
             input_workout = input('Enter your input: ')
             with open(f'{person}-workout.txt', 'a') as file:
-                file.write(str(getdate()) + ' ' + input_workout + '\n')
+                file.write(f'{str(getdate())} {input_workout} \n')
             reentry = input('Do you want to make another entry? (Y/N)')
             if reentry.lower() == 'n':
                 break
