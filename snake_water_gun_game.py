@@ -13,8 +13,8 @@ while True:
     else:
         print('You lose.')
     count = input('Want to try again? (Y/N) ')
-    if count.lower() == 'y':
-        pass
-    else:
-        print('Better luck next time.')
+    if count.lower() != 'y':
+        print('See you next time.')
         break
+    else:
+        random_var = random.choice(option)
